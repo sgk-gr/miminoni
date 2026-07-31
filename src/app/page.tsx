@@ -21,7 +21,7 @@ export default function Home() {
               </div>
               <div>
                 <span className="font-bold text-lg md:text-xl tracking-tight text-slate-100 block">LYROUDIS CONSULTING SERVICES</span>
-                <span className="text-xs text-slate-400 font-mono tracking-wider">IT & SOFTWARE SOLUTIONS</span>
+                <span className="text-xs text-slate-400 font-mono tracking-wider">ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
               </div>
             </div>
             
@@ -73,7 +73,7 @@ export default function Home() {
             {/* Επωνυμία με λατινικούς χαρακτήρες */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
-                Επωνυμία (Λατινικά)
+                Επωνυμία με λατινικούς χαρακτήρες
               </div>
               <div className="md:col-span-8 font-semibold text-slate-200">
                 LYROUDIS CONSULTING SERVICES SINGLE MEMBER P.C.
@@ -83,24 +83,34 @@ export default function Home() {
             {/* Διακριτικοί Τίτλοι */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
-                Διακριτικός Τίτλος
+                Διακριτικοί Τίτλοι
               </div>
               <div className="md:col-span-8 font-semibold text-slate-200">
-                LYROUDIS CONSULTING SERVICES
+                LYROUDIS CONSULTING SERVICES / LYROUDIS CONSULTING SERVICES (απόδοση με Λατινικούς χαρακτήρες)
               </div>
             </div>
 
             {/* Αριθμός ΓΕΜΗ */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
-                Αριθμός ΓΕΜΗ
+                Αριθμός Γ.Ε.ΜΗ.
               </div>
               <div className="md:col-span-8 font-bold text-blue-400 font-mono tracking-wider text-base md:text-lg">
                 195135303000 <span className="font-normal text-slate-400 text-xs md:text-sm font-sans">(EUID: ELGEMI.195135303000)</span>
               </div>
             </div>
 
-            {/* ΑΦΜ */}
+            {/* Αρμόδια Υπηρεσία ΓΕΜΗ */}
+            <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
+              <div className="md:col-span-4 text-slate-400 font-medium">
+                Αρμόδια Υπηρεσία ΓΕΜΗ
+              </div>
+              <div className="md:col-span-8 font-semibold text-slate-200">
+                ΕΠΑΓΓΕΛΜΑΤΙΚΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΑΘΗΝΑΣ
+              </div>
+            </div>
+
+            {/* ΑΦΜ / ΔΟΥ */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
                 ΑΦΜ / ΔΟΥ
@@ -137,7 +147,7 @@ export default function Home() {
             {/* Έδρα / Διεύθυνση */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
-                Έδρα / Διεύθυνση
+                Διεύθυνση Έδρας
               </div>
               <div className="md:col-span-8 font-medium text-slate-200">
                 <a 
@@ -147,7 +157,7 @@ export default function Home() {
                   className="text-blue-400 hover:text-blue-300 hover:underline inline-flex items-center gap-1.5 transition-colors"
                 >
                   <MapPin size={16} className="text-blue-400 shrink-0" />
-                  Κυπρίων Αγωνιστών 68, Αργυρούπολη, Τ.Κ. 16451 (Δήμος Ελληνικού - Αργυρούπολης)
+                  Κυπρίων Αγωνιστών 68, 16451 Αργυρούπολη (Δήμος Ελληνικού - Αργυρούπολης)
                 </a>
               </div>
             </div>
@@ -155,30 +165,32 @@ export default function Home() {
             {/* Διαχειριστής & Εταίρος */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-400 font-medium">
-                Διαχειριστής & Εταίρος
+                Εταίρος & Διαχειριστής
               </div>
               <div className="md:col-span-8 font-semibold text-slate-100">
-                Βασίλειος Λυρούδης του Χρήστου <span className="font-normal text-slate-400 text-sm">(Μοναδικός Εταίρος - Ποσοστό 100%)</span>
+                Βασίλειος Λυρούδης του Χρήστου <span className="font-normal text-slate-400 text-sm">(100% Ποσοστό Συμμετοχής - 10 Μερίδια)</span>
               </div>
             </div>
 
-            {/* Δραστηριότητες (ΚΑΔ) */}
+            {/* Δραστηριότητες επιχείρησης (ΚΑΔ) */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-4 gap-2 md:gap-4 items-start">
               <div className="md:col-span-4 text-slate-400 font-medium pt-1">
-                Σκοπός & ΚΑΔ
+                Δραστηριότητες Επιχείρησης (ΚΑΔ)
               </div>
               <div className="md:col-span-8 space-y-2.5">
-                <div className="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
+                <div className="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
                   <div className="font-bold text-xs text-blue-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                    <Code2 size={14} /> Κύρια Δραστηριότητα (ΚΑΔ: 62202000)
+                    <Code2 size={14} /> Κύρια Δραστηριότητα (62202000)
                   </div>
-                  <div className="text-slate-200 text-sm font-medium">Υπηρεσίες παροχής συμβουλών για θέματα συστημάτων και λογισμικού</div>
+                  <div className="text-white text-base font-bold">ΥΠΗΡΕΣΙΕΣ ΠΑΡΟΧΗΣ ΣΥΜΒΟΥΛΩΝ ΓΙΑ ΘΕΜΑΤΑ ΣΥΣΤΗΜΑΤΩΝ ΚΑΙ ΛΟΓΙΣΜΙΚΟΥ</div>
+                  <div className="text-xs text-slate-400 mt-1">Ημερομηνία Έναρξης: 16/07/2026</div>
                 </div>
-                <div className="bg-slate-900/90 p-3.5 rounded-xl border border-slate-800">
+                <div className="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
                   <div className="font-bold text-xs text-slate-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                    <Server size={14} /> Δευτερεύουσα Δραστηριότητα (ΚΑΔ: 62101107)
+                    <Server size={14} /> Δευτερεύουσα Δραστηριότητα (62101107)
                   </div>
-                  <div className="text-slate-200 text-sm font-medium">Υπηρεσίες σχεδιασμού, υποστήριξης και ολοκλήρωσης συστήματος λογισμικού</div>
+                  <div className="text-slate-200 text-sm font-semibold">ΥΠΗΡΕΣΙΕΣ ΣΧΕΔΙΑΣΜΟΥ, ΥΠΟΣΤΗΡΙΞΗΣ ΚΑΙ ΟΛΟΚΛΗΡΩΣΗΣ ΣΥΣΤΗΜΑΤΟΣ ΛΟΓΙΣΜΙΚΟΥ</div>
+                  <div className="text-xs text-slate-400 mt-1">Ημερομηνία Έναρξης: 16/07/2026</div>
                 </div>
               </div>
             </div>
@@ -191,40 +203,12 @@ export default function Home() {
               <div className="md:col-span-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-slate-200 font-semibold">
                 <div className="flex items-center gap-2">
                   <Phone size={15} className="text-slate-400" />
-                  <span className="text-slate-400 font-normal">Κινητό:</span>
+                  <span className="text-slate-400 font-normal">Τηλέφωνο:</span>
                   <a href="tel:6973400545" className="hover:text-blue-400 transition-colors font-mono">6973400545</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail size={15} className="text-slate-400" />
-                  <span className="text-slate-400 font-normal">Email:</span>
-                  <a href="mailto:info@lyroudis.gr" className="hover:text-blue-400 transition-colors">info@lyroudis.gr</a>
                 </div>
               </div>
             </div>
 
-          </div>
-        </div>
-
-        {/* Executive Services Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-slate-950/80 p-6 rounded-2xl border border-slate-800 shadow-xl">
-            <div className="w-11 h-11 bg-blue-950/80 text-blue-400 rounded-xl border border-blue-800/40 flex items-center justify-center mb-4">
-              <ShieldCheck size={22} />
-            </div>
-            <h3 className="font-bold text-white text-lg mb-2">Συμβουλευτική IT & Αρχιτεκτονική</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Εξειδικευμένη παροχή συμβουλών για τον σχεδιασμό, την αξιολόγηση και τη βελτιστοποίηση πληροφοριακών συστημάτων και εταιρικού λογισμικού υψηλών απαιτήσεων.
-            </p>
-          </div>
-
-          <div className="bg-slate-950/80 p-6 rounded-2xl border border-slate-800 shadow-xl">
-            <div className="w-11 h-11 bg-blue-950/80 text-blue-400 rounded-xl border border-blue-800/40 flex items-center justify-center mb-4">
-              <FileText size={22} />
-            </div>
-            <h3 className="font-bold text-white text-lg mb-2">Ολοκλήρωση & Υποστήριξη Συστημάτων</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Υπηρεσίες σχεδιασμού, ενοποίησης και διαρκούς τεχνικής υποστήριξης συστημάτων λογισμικού, εξασφαλίζοντας την επιχειρησιακή συνέχεια.
-            </p>
           </div>
         </div>
       </main>
@@ -235,7 +219,7 @@ export default function Home() {
           
           <div className="mb-10 pb-8 border-b border-slate-800/80">
             <div className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-3">
-              Εταιρική Δημοσιότητα Ι.Κ.Ε. / ΓΕΜΗ
+              Στοιχεία Δημοσιότητας Ι.Κ.Ε. / ΓΕΜΗ
             </div>
 
             <div className="flex items-center justify-center gap-3 text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-2">
@@ -252,7 +236,7 @@ export default function Home() {
           {/* Sub-footer details & credits */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <div className="text-center md:text-left leading-relaxed">
-              © 2026 Lyroudis Consulting Services Μονοπρόσωπη Ι.Κ.Ε. | ΓΕΜΗ: 195135303000 | ΑΦΜ: 803351366
+              © 2026 LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. | ΓΕΜΗ: 195135303000 | ΑΦΜ: 803351366
             </div>
             <div className="flex items-center gap-3 shrink-0">
               <span className="text-slate-400">Δημιουργήθηκε από sgk.gr</span>
