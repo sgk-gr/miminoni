@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCircle, Building2 } from 'lucide-react';
 
 export default function Home() {
@@ -8,10 +9,18 @@ export default function Home() {
     <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-slate-900 antialiased">
       {/* Clean Corporate Modern Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 md:px-8 py-4 flex flex-wrap justify-between items-center gap-4">
-          {/* Company Name / Logo */}
-          <div className="flex items-center gap-2.5">
-            <div className="w-2.5 h-7 bg-blue-700 rounded-full"></div>
+        <div className="max-w-5xl mx-auto px-4 md:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
+          {/* Company Name & Logo */}
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 relative overflow-hidden rounded-lg shadow-sm border border-slate-100 shrink-0">
+              <Image 
+                src="/logo.png" 
+                alt="Lyroudis Consulting Logo" 
+                fill 
+                className="object-cover" 
+                priority 
+              />
+            </div>
             <div>
               <span className="font-extrabold text-xl tracking-tight text-slate-900 block leading-tight">
                 LYROUDIS
@@ -279,12 +288,22 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
-            <div>
-              <div className="text-lg font-bold text-white mb-1">
-                LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 relative overflow-hidden rounded-lg border border-slate-700 shrink-0">
+                <Image 
+                  src="/logo.png" 
+                  alt="Lyroudis Consulting Logo" 
+                  fill 
+                  className="object-cover" 
+                />
               </div>
-              <div className="text-xs text-slate-400">
-                LYROUDIS CONSULTING SERVICES SINGLE MEMBER P.C.
+              <div>
+                <div className="text-lg font-bold text-white mb-0.5">
+                  LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
+                </div>
+                <div className="text-xs text-slate-400">
+                  LYROUDIS CONSULTING SERVICES SINGLE MEMBER P.C.
+                </div>
               </div>
             </div>
 
