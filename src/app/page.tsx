@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { MapPin, Phone, ShieldCheck, Mail, Building } from 'lucide-react';
+import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCircle } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -33,10 +33,10 @@ export default function Home() {
       </header>
 
       {/* Page Title Section */}
-      <section className="bg-slate-100 border-b border-slate-200/80 py-10 px-4 md:px-8">
+      <section className="bg-slate-100 border-b border-slate-200/80 py-8 px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-1.5 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2">
-            <ShieldCheck size={16} /> Νομική Δημοσιότητα Ν. 4072/2012
+            <ShieldCheck size={16} /> Νομική Δημοσιότητα Ι.Κ.Ε. (Άρθρο 47 Ν. 4072/2012 & Ν. 4919/2022)
           </div>
           <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
             Εταιρική Διαφάνεια & Στοιχεία Γ.Ε.ΜΗ.
@@ -45,10 +45,14 @@ export default function Home() {
       </section>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-4 md:px-8 py-10 flex-grow w-full">
-        {/* Clean Corporate Table Card */}
+      <main className="max-w-5xl mx-auto px-4 md:px-8 py-10 flex-grow w-full space-y-8">
+        
+        {/* Main Details Table Card */}
         <div className="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden p-6 md:p-8">
-          
+          <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
+            <Building size={18} className="text-blue-700" /> Βασικά Στοιχεία Επιχείρησης
+          </h2>
+
           <div className="divide-y divide-slate-100 text-sm md:text-base">
             
             {/* Εταιρική Επωνυμία */}
@@ -81,7 +85,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Αριθμός ΓΕΜΗ */}
+            {/* Αριθμός ΓΕΜΗ & EUID */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-3.5 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-500 font-medium">
                 Αριθμός Γ.Ε.ΜΗ.
@@ -101,7 +105,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ΑΦΜ */}
+            {/* ΑΦΜ / ΔΟΥ */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-3.5 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-500 font-medium">
                 ΑΦΜ / ΔΟΥ
@@ -117,7 +121,7 @@ export default function Home() {
                 Νομική Μορφή / Κατάσταση
               </div>
               <div className="md:col-span-8 flex items-center gap-2 font-bold text-slate-900">
-                <span>Ι.Κ.Ε. /</span>
+                <span>Μονοπρόσωπη Ι.Κ.Ε. /</span>
                 <span className="bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-semibold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
                   Ενεργή
                 </span>
@@ -125,13 +129,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Εταιρικό Κεφάλαιο */}
+            {/* Ημερομηνία Σύστασης & Διάρκεια */}
             <div className="grid grid-cols-1 md:grid-cols-12 py-3.5 gap-2 md:gap-4 items-center">
               <div className="md:col-span-4 text-slate-500 font-medium">
-                Εταιρικό Κεφάλαιο
+                Ημερομηνία Σύστασης & Διάρκεια
               </div>
               <div className="md:col-span-8 font-medium text-slate-800">
-                1.000,00 € <span className="text-slate-500 text-sm">(10 Εταιρικά Μερίδια x 100,00 €)</span>
+                16/07/2026 — <span className="text-slate-600">Αορίστου Χρόνου</span>
               </div>
             </div>
 
@@ -148,35 +152,8 @@ export default function Home() {
                   className="text-blue-700 hover:underline inline-flex items-center gap-1"
                 >
                   <MapPin size={15} className="text-slate-400 shrink-0" />
-                  Κυπρίων Αγωνιστών 68, 16451 Αργυρούπολη
+                  Κυπρίων Αγωνιστών 68, Τ.Κ. 16451, Αργυρούπολη (Δήμος Ελληνικού - Αργυρούπολης)
                 </a>
-              </div>
-            </div>
-
-            {/* Διαχειριστής & Εταίρος */}
-            <div className="grid grid-cols-1 md:grid-cols-12 py-3.5 gap-2 md:gap-4 items-center">
-              <div className="md:col-span-4 text-slate-500 font-medium">
-                Διαχειριστής & Εταίρος
-              </div>
-              <div className="md:col-span-8 font-medium text-slate-800">
-                Βασίλειος Λυρούδης του Χρήστου <span className="text-slate-500 text-sm">(Ποσοστό 100%)</span>
-              </div>
-            </div>
-
-            {/* Δραστηριότητες (ΚΑΔ) */}
-            <div className="grid grid-cols-1 md:grid-cols-12 py-3.5 gap-2 md:gap-4 items-start">
-              <div className="md:col-span-4 text-slate-500 font-medium pt-1">
-                Δραστηριότητες (ΚΑΔ)
-              </div>
-              <div className="md:col-span-8 space-y-2">
-                <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/70">
-                  <div className="font-bold text-xs text-blue-700 uppercase tracking-wider mb-0.5">Κύρια Δραστηριότητα (62202000)</div>
-                  <div className="text-slate-900 font-medium">ΥΠΗΡΕΣΙΕΣ ΠΑΡΟΧΗΣ ΣΥΜΒΟΥΛΩΝ ΓΙΑ ΘΕΜΑΤΑ ΣΥΣΤΗΜΑΤΩΝ ΚΑΙ ΛΟΓΙΣΜΙΚΟΥ</div>
-                </div>
-                <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/70">
-                  <div className="font-bold text-xs text-slate-500 uppercase tracking-wider mb-0.5">Δευτερεύουσα Δραστηριότητα (62101107)</div>
-                  <div className="text-slate-800">ΥΠΗΡΕΣΙΕΣ ΣΧΕΔΙΑΣΜΟΥ, ΥΠΟΣΤΗΡΙΞΗΣ ΚΑΙ ΟΛΟΚΛΗΡΩΣΗΣ ΣΥΣΤΗΜΑΤΟΣ ΛΟΓΙΣΜΙΚΟΥ</div>
-                </div>
               </div>
             </div>
 
@@ -192,8 +169,109 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+
+        {/* Section 2: Capital & Governance Details (Mandatory IKE elements) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          {/* Capital & Shares */}
+          <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6">
+            <h3 className="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
+              <Wallet size={18} className="text-blue-700" /> Εταιρικό Κεφάλαιο & Μερίδια
+            </h3>
+            <div className="space-y-3 text-sm">
+              <div className="flex justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">Συνολικό Κεφάλαιο:</span>
+                <span className="font-bold text-slate-900">1.000,00 €</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">Είδος Εισφορών:</span>
+                <span className="font-medium text-slate-800">100% Κεφαλαιακές Εισφορές</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">Αριθμός Μεριδίων:</span>
+                <span className="font-medium text-slate-800">10 μερίδια (100,00 € / μερίδιο)</span>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">Κατάσταση Καταβολής:</span>
+                <span className="font-bold text-emerald-700">Ολοσχερώς Καταβεβλημένο</span>
+              </div>
+              <div className="flex justify-between py-1">
+                <span className="text-slate-500">1η Διαχειριστική Περίοδος:</span>
+                <span className="font-medium text-slate-800">Λήξη 31/12/2026</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Governance & Sole Partner */}
+          <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6">
+            <h3 className="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
+              <Users size={18} className="text-blue-700" /> Διοίκηση & Μοναδικός Εταίρος
+            </h3>
+            <div className="space-y-3 text-sm">
+              <div className="py-1 border-b border-slate-100">
+                <div className="text-slate-500 text-xs uppercase font-semibold mb-1">Μοναδικός Εταίρος & Διαχειριστής</div>
+                <div className="font-bold text-slate-900 text-base">Βασίλειος Λυρούδης του Χρήστου</div>
+                <div className="text-slate-500 text-xs mt-0.5">ΑΦΜ: 050480299</div>
+              </div>
+              <div className="flex justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">Ποσοστό Συμμετοχής:</span>
+                <span className="font-bold text-slate-900">100% (10 / 10 Μερίδια)</span>
+              </div>
+              <div className="flex justify-between py-1">
+                <span className="text-slate-500">Ιδιότητα Διαχείρισης:</span>
+                <span className="font-medium text-slate-800">Νόμιμος Εκπρόσωπος & Διαχειριστής</span>
+              </div>
+            </div>
+          </div>
 
         </div>
+
+        {/* Section 3: Activities (KAD) */}
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6">
+          <h3 className="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
+            <FileText size={18} className="text-blue-700" /> Δραστηριότητες Επιχείρησης (ΚΑΔ)
+          </h3>
+
+          <div className="space-y-3">
+            <div className="bg-slate-50 p-4 rounded-lg border border-slate-200/80">
+              <div className="flex items-center justify-between mb-1">
+                <span className="font-bold text-xs text-blue-700 uppercase tracking-wider">Κύρια Δραστηριότητα (ΚΑΔ 62202000)</span>
+                <span className="text-xs text-slate-400">Έναρξη: 16/07/2026</span>
+              </div>
+              <div className="text-slate-900 font-bold">
+                ΥΠΗΡΕΣΙΕΣ ΠΑΡΟΧΗΣ ΣΥΜΒΟΥΛΩΝ ΓΙΑ ΘΕΜΑΤΑ ΣΥΣΤΗΜΑΤΩΝ ΚΑΙ ΛΟΓΙΣΜΙΚΟΥ
+              </div>
+            </div>
+
+            <div className="bg-slate-50 p-4 rounded-lg border border-slate-200/80">
+              <div className="flex items-center justify-between mb-1">
+                <span className="font-bold text-xs text-slate-500 uppercase tracking-wider">Δευτερεύουσα Δραστηριότητα (ΚΑΔ 62101107)</span>
+                <span className="text-xs text-slate-400">Έναρξη: 16/07/2026</span>
+              </div>
+              <div className="text-slate-800 font-semibold">
+                ΥΠΗΡΕΣΙΕΣ ΣΧΕΔΙΑΣΜΟΥ, ΥΠΟΣΤΗΡΙΞΗΣ ΚΑΙ ΟΛΟΚΛΗΡΩΣΗΣ ΣΥΣΤΗΜΑΤΟΣ ΛΟΓΙΣΜΙΚΟΥ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4: Financial Statements / Publications Container */}
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6">
+          <h3 className="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
+            <FileText size={18} className="text-blue-700" /> Δημοσιεύσεις & Οικονομικές Καταστάσεις (Ισολογισμοί)
+          </h3>
+          <div className="bg-slate-50 p-4 rounded-lg border border-dashed border-slate-300 text-slate-600 text-sm flex items-start gap-3">
+            <AlertCircle size={20} className="text-slate-400 shrink-0 mt-0.5" />
+            <div>
+              <div className="font-semibold text-slate-800 mb-1">1η Διαχειριστική Περίοδος (2026)</div>
+              <div>
+                Η εταιρεία ανήκει στη χρήση 2026 (Σύσταση: 16/07/2026). Οι πρώτοι ετήσιοι ισολογισμοί & οικονομικές καταστάσεις θα αναρτηθούν μετά τη λήξη της 1ης διαχειριστικής περιόδου (31/12/2026) σύμφωνα με τις προθεσμίες του Ν. 4072/2012.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
 
       {/* Clean Slate Corporate Footer */}
@@ -212,13 +290,14 @@ export default function Home() {
 
             <div className="text-xs text-slate-400 space-y-1">
               <div><strong className="text-slate-300">Γ.Ε.ΜΗ.:</strong> 195135303000</div>
+              <div><strong className="text-slate-300">EUID:</strong> ELGEMI.195135303000</div>
               <div><strong className="text-slate-300">ΑΦΜ:</strong> 803351366 (ΔΟΥ ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ)</div>
             </div>
           </div>
 
           <div className="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
             <div>
-              © 2026 LYROUDIS CONSULTING SERVICES Μ.Ι.Κ.Ε. - Κυπρίων Αγωνιστών 68, 16451 Αργυρούπολη
+              © 2026 LYROUDIS CONSULTING SERVICES Μ.Ι.Κ.Ε. — Κυπρίων Αγωνιστών 68, 16451 Αργυρούπολη
             </div>
             <div className="text-slate-400 font-medium">
               Δημιουργήθηκε από <span className="text-slate-300">sgk.gr</span>
