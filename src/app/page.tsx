@@ -19,9 +19,6 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="bg-white/15 text-xs px-3 py-1.5 rounded-full border border-white/30 font-medium">
-                ΕΛ
-              </span>
               <a 
                 href="tel:6973400545" 
                 className="bg-[#ff6b4a] hover:bg-[#f05a38] text-white text-xs font-semibold px-4 py-2 rounded-full transition-all shadow-sm flex items-center gap-1.5"
