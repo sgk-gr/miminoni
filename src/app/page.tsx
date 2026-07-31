@@ -12,13 +12,13 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 md:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
           {/* Company Name & Logo */}
           <div className="flex items-center gap-3">
-            <Image 
-              src="/logo.png" 
+            {/* Direct SVG Image element for 100% vector crispness */}
+            <img 
+              src="/logo.svg" 
               alt="Lyroudis Consulting Logo" 
               width={54} 
               height={54} 
-              className="object-contain shrink-0" 
-              priority 
+              className="w-[54px] h-[54px] object-contain shrink-0 bg-white block" 
             />
             <div>
               <span className="font-extrabold text-xl md:text-2xl tracking-tight text-slate-900 block leading-tight">
@@ -288,12 +288,12 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
             <div className="flex items-center gap-3">
-              <Image 
-                src="/logo.png" 
+              <img 
+                src="/logo.svg" 
                 alt="Lyroudis Consulting Logo" 
                 width={48} 
                 height={48} 
-                className="object-contain shrink-0 rounded-md" 
+                className="w-[48px] h-[48px] object-contain shrink-0 bg-white p-1 rounded-md block" 
               />
               <div>
                 <div className="text-lg font-bold text-white mb-0.5">
