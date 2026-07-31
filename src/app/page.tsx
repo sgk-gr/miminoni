@@ -170,9 +170,15 @@ export default function Home() {
               <div className="md:col-span-4 text-slate-500 font-medium">
                 Στοιχεία Επικοινωνίας
               </div>
-              <div className="md:col-span-8 text-slate-800 font-medium">
-                <span className="text-slate-500">Τηλέφωνο: </span>
-                <a href="tel:6973400545" className="font-bold text-slate-900 hover:text-blue-700">6973400545</a>
+              <div className="md:col-span-8 flex flex-wrap items-center gap-x-6 gap-y-1 text-slate-800 font-medium">
+                <div>
+                  <span className="text-slate-500">Τηλέφωνο: </span>
+                  <a href="tel:6973400545" className="font-bold text-slate-900 hover:text-blue-700">6973400545</a>
+                </div>
+                <div>
+                  <span className="text-slate-500">Email: </span>
+                  <a href="mailto:info@lyroudis.gr" className="font-bold text-slate-900 hover:text-blue-700">info@lyroudis.gr</a>
+                </div>
               </div>
             </div>
 
