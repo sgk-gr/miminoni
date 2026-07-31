@@ -200,10 +200,7 @@ export default function Home() {
                 <span className="text-slate-500">Αριθμός Μεριδίων:</span>
                 <span className="font-medium text-slate-800">10 μερίδια (100,00 € / μερίδιο)</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-slate-100">
-                <span className="text-slate-500">Κατάσταση Καταβολής:</span>
-                <span className="font-bold text-emerald-700">Ολοσχερώς Καταβεβλημένο</span>
-              </div>
+
               <div className="flex justify-between py-1">
                 <span className="text-slate-500">1η Διαχειριστική Περίοδος:</span>
                 <span className="font-medium text-slate-800">Λήξη 31/12/2026</span>
