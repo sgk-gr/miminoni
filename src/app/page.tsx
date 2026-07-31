@@ -10,14 +10,14 @@ export default function Home() {
       {/* Clean Corporate Modern Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 md:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
-          {/* Company Name & Logo without box container */}
+          {/* Company Name & Logo */}
           <div className="flex items-center gap-3">
             <Image 
               src="/logo.png" 
               alt="Lyroudis Consulting Logo" 
               width={54} 
               height={54} 
-              className="object-contain mix-blend-multiply shrink-0" 
+              className="object-contain shrink-0" 
               priority 
             />
             <div>
@@ -293,7 +293,7 @@ export default function Home() {
                 alt="Lyroudis Consulting Logo" 
                 width={48} 
                 height={48} 
-                className="object-contain shrink-0 bg-white p-1 rounded-md" 
+                className="object-contain shrink-0 rounded-md" 
               />
               <div>
                 <div className="text-lg font-bold text-white mb-0.5">
