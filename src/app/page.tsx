@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCircle } from 'lucide-react';
+import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCircle, Building2 } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
         {/* Main Details Table Card */}
         <div className="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden p-6 md:p-8">
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <Building size={18} className="text-blue-700" /> Βασικά Στοιχεία Επιχείρησης
+            <Building2 size={18} className="text-blue-700" /> Βασικά Στοιχεία Επιχείρησης
           </h2>
 
           <div className="divide-y divide-slate-100 text-sm md:text-base">
