@@ -13,9 +13,6 @@ export default function Home() {
           {/* Top Bar / Navigation */}
           <div className="flex justify-between items-center pb-6 border-b border-white/20">
             <div className="flex items-center gap-3">
-              <div className="bg-white text-[#2b85cf] w-9 h-9 rounded-lg font-extrabold text-lg flex items-center justify-center shadow-sm">
-                L
-              </div>
               <span className="font-bold text-lg md:text-xl tracking-tight text-white">
                 LYROUDIS CONSULTING SERVICES
               </span>
@@ -204,11 +201,8 @@ export default function Home() {
             Στοιχεία Δημοσιότητας Ι.Κ.Ε. / ΓΕΜΗ
           </div>
 
-          {/* Large Logo Title */}
-          <div className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
-            <div className="w-8 h-8 bg-white text-[#ff6b4a] rounded-lg flex items-center justify-center text-lg font-black">
-              L
-            </div>
+          {/* Large Logo Title without L box */}
+          <div className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
             LYROUDIS CONSULTING SERVICES
           </div>
 
