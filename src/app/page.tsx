@@ -9,23 +9,22 @@ export default function Home() {
     <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-slate-900 antialiased">
       {/* Clean Corporate Modern Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 md:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
-          {/* Company Name & Logo */}
+        <div className="max-w-5xl mx-auto px-4 md:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
+          {/* Company Name & Logo without box container */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 relative overflow-hidden rounded-lg shadow-sm border border-slate-100 shrink-0">
-              <Image 
-                src="/logo.png" 
-                alt="Lyroudis Consulting Logo" 
-                fill 
-                className="object-cover" 
-                priority 
-              />
-            </div>
+            <Image 
+              src="/logo.png" 
+              alt="Lyroudis Consulting Logo" 
+              width={54} 
+              height={54} 
+              className="object-contain mix-blend-multiply shrink-0" 
+              priority 
+            />
             <div>
-              <span className="font-extrabold text-xl tracking-tight text-slate-900 block leading-tight">
+              <span className="font-extrabold text-xl md:text-2xl tracking-tight text-slate-900 block leading-tight">
                 LYROUDIS
               </span>
-              <span className="text-[11px] font-semibold tracking-wider text-slate-500 uppercase">
+              <span className="text-[11px] font-semibold tracking-wider text-slate-500 uppercase block mt-0.5">
                 CONSULTING SERVICES I.K.E.
               </span>
             </div>
@@ -289,14 +288,13 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 relative overflow-hidden rounded-lg border border-slate-700 shrink-0">
-                <Image 
-                  src="/logo.png" 
-                  alt="Lyroudis Consulting Logo" 
-                  fill 
-                  className="object-cover" 
-                />
-              </div>
+              <Image 
+                src="/logo.png" 
+                alt="Lyroudis Consulting Logo" 
+                width={48} 
+                height={48} 
+                className="object-contain shrink-0 bg-white p-1 rounded-md" 
+              />
               <div>
                 <div className="text-lg font-bold text-white mb-0.5">
                   LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
