@@ -300,7 +300,7 @@ export default function Home() {
               © 2026 LYROUDIS CONSULTING SERVICES Μ.Ι.Κ.Ε. — Κυπρίων Αγωνιστών 68, 16451 Αργυρούπολη
             </div>
             <div className="text-slate-400 font-medium">
-              Δημιουργήθηκε από <span className="text-slate-300">sgk.gr</span>
+              Δημιουργήθηκε από <a href="https://sgk.gr" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-white underline transition-colors font-bold">sgk.gr</a>
             </div>
           </div>
 
