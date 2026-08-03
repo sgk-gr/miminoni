@@ -178,6 +178,8 @@ export default function Home() {
                 <div>
                   <span className="text-slate-500">Email: </span>
                   <a href="mailto:info@lyroudis.gr" className="font-bold text-slate-900 hover:text-blue-700">info@lyroudis.gr</a>
+                  <span className="text-slate-400 mx-1">,</span>
+                  <a href="mailto:lyroudi@hotmail.com" className="font-bold text-slate-900 hover:text-blue-700">lyroudi@hotmail.com</a>
                 </div>
               </div>
             </div>
