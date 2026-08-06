@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "greek"] });
 
 export const metadata: Metadata = {
-  title: "LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. | Εταιρική Διαφάνεια & Στοιχεία ΓΕΜΗ",
-  description: "Στοιχεία δημοσιότητας και εταιρικής διαφάνειας ΓΕΜΗ της εταιρείας LYROUDIS CONSULTING SERVICES ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. σύμφωνα με το ν. 4072/2012.",
+  title: "MIMI AND NONI ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. | Εταιρική Διαφάνεια & Στοιχεία ΓΕΜΗ",
+  description: "Στοιχεία δημοσιότητας και εταιρικής διαφάνειας ΓΕΜΗ της εταιρείας MIMI AND NONI ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. σύμφωνα με το ν. 4072/2012.",
 };
 
 export default function RootLayout({

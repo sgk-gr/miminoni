@@ -2,10 +2,9 @@
   <!-- Pure White Solid Background -->
   <rect width="200" height="200" fill="#ffffff" />
   
-  <!-- L Monogram in Navy Blue -->
-  <path d="M 35 30 L 70 30 L 70 125 L 165 125 L 165 160 L 35 160 Z" fill="#1d4ed8" />
-  
-  <!-- Arrow Path in Royal Blue -->
-  <path d="M 85 115 L 145 55 L 155 65 L 95 125 Z" fill="#2563eb" />
-  <polygon points="135,45 170,45 170,80" fill="#2563eb" />
+  <!-- Stylized MN Monogram / Emblem -->
+  <!-- Letter M -->
+  <path d="M 30 150 L 30 50 L 60 110 L 90 50 L 90 150 L 70 150 L 70 90 L 60 110 L 50 90 L 50 150 Z" fill="#1d4ed8" />
+  <!-- Letter N -->
+  <path d="M 110 150 L 110 50 L 145 120 L 145 50 L 165 50 L 165 150 L 130 80 L 130 150 Z" fill="#2563eb" />
 </svg>
