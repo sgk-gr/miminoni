@@ -5,47 +5,47 @@ import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCir
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-slate-900 antialiased">
-      {/* Clean Corporate Modern Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 md:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
+    <div className="min-h-screen flex flex-col font-sans bg-emerald-950/5 text-slate-900 antialiased">
+      {/* Premium Executive Header - Deep Forest Emerald & Gold Accent */}
+      <header className="bg-slate-900 border-b border-emerald-900/40 sticky top-0 z-50 shadow-md">
+        <div className="max-w-5xl mx-auto px-4 md:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
           {/* Company Name & Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3.5">
             <img 
               src="/logo.svg" 
               alt="MIMI AND NONI Logo" 
               width={54} 
               height={54} 
-              className="w-[54px] h-[54px] object-contain shrink-0 bg-white block" 
+              className="w-[54px] h-[54px] object-contain shrink-0 rounded-lg block shadow-sm" 
             />
             <div>
-              <span className="font-extrabold text-xl md:text-2xl tracking-tight text-slate-900 block leading-tight">
+              <span className="font-extrabold text-xl md:text-2xl tracking-tight text-white block leading-tight">
                 MIMI AND NONI
               </span>
-              <span className="text-[11px] font-semibold tracking-wider text-slate-500 uppercase block mt-0.5">
+              <span className="text-[11px] font-bold tracking-widest text-emerald-400 uppercase block mt-0.5">
                 ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
               </span>
             </div>
           </div>
 
-          {/* Header Action Button */}
+          {/* Header Action Button - Elegant Gold / Amber */}
           <a 
             href="tel:6980877448" 
-            className="bg-blue-700 hover:bg-blue-800 text-white text-xs font-semibold px-4 py-2.5 rounded-md transition-colors flex items-center gap-2 shadow-sm"
+            className="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-4 py-2.5 rounded-md transition-all shadow-sm flex items-center gap-2 border border-amber-500/30"
           >
             <Phone size={14} /> 6980877448
           </a>
         </div>
       </header>
 
-      {/* Page Title Section */}
-      <section className="bg-slate-100 border-b border-slate-200/80 py-8 px-4 md:px-8">
+      {/* Page Title Section - Rich Slate & Emerald */}
+      <section className="bg-slate-800 text-white border-b border-slate-700 py-8 px-4 md:px-8">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
               <ShieldCheck size={16} /> Νομική Δημοσιότητα Ι.Κ.Ε. (Άρθρο 47 Ν. 4072/2012 & Ν. 4919/2022)
             </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+            <h1 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
               Εταιρική Διαφάνεια & Στοιχεία Γ.Ε.ΜΗ.
             </h1>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
               href="https://publicity.businessportal.gr/company/195248103000#" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-slate-700 hover:bg-slate-600 text-slate-100 border border-slate-600 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
             >
               <Printer size={14} /> Εκτυπώσιμη Μορφή
             </a>
@@ -62,7 +62,7 @@ export default function Home() {
               href="https://publicity.businessportal.gr/api/company/195248103000/vcf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-slate-700 hover:bg-slate-600 text-slate-100 border border-slate-600 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
             >
               <Download size={14} /> Αποθήκευση vCard
             </a>
@@ -74,9 +74,9 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-4 md:px-8 py-10 flex-grow w-full space-y-8">
         
         {/* Main Details Table Card */}
-        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden p-6 md:p-8">
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/90 overflow-hidden p-6 md:p-8">
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <Building2 size={18} className="text-blue-700" /> Βασικά Στοιχεία Επιχείρησης
+            <Building2 size={18} className="text-emerald-700" /> Βασικά Στοιχεία Επιχείρησης
           </h2>
 
           <div className="divide-y divide-slate-100 text-sm md:text-base">
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="md:col-span-4 text-slate-500 font-medium">
                 Αριθμός Γ.Ε.ΜΗ.
               </div>
-              <div className="md:col-span-8 font-bold text-blue-700">
+              <div className="md:col-span-8 font-bold text-emerald-800">
                 195248103000 <span className="font-normal text-slate-500 text-sm">(EUID: ELGEMI.195248103000)</span>
               </div>
             </div>
@@ -165,9 +165,9 @@ export default function Home() {
                   href="https://www.google.com/maps/search/%CE%91%CE%98%CE%91%CE%9D%CE%91%CE%A3%CE%99%CE%9F%CE%A5%20%CE%94%CE%99%CE%91%CE%9A%CE%9F%CE%A5%201,%20%CE%91%CE%98%CE%97%CE%9D%CE%91,%2016772" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-700 hover:underline inline-flex items-center gap-1"
+                  className="text-emerald-800 hover:underline inline-flex items-center gap-1 font-semibold"
                 >
-                  <MapPin size={15} className="text-slate-400 shrink-0" />
+                  <MapPin size={15} className="text-emerald-600 shrink-0" />
                   ΑΘΑΝΑΣΙΟΥ ΔΙΑΚΟΥ 1, ΒΑΡΗ, ΒΑΡΗΣ - ΒΟΥΛΑΣ - ΒΟΥΛΙΑΓΜΕΝΗΣ / ΑΝΑΤΟΛΙΚΗΣ ΑΤΤΙΚΗΣ, 16772
                 </a>
               </div>
@@ -181,13 +181,13 @@ export default function Home() {
               <div className="md:col-span-8 flex flex-wrap items-center gap-x-6 gap-y-1 text-slate-800 font-medium">
                 <div>
                   <span className="text-slate-500">Τηλέφωνο: </span>
-                  <a href="tel:6980877448" className="font-bold text-slate-900 hover:text-blue-700">6980877448</a>
+                  <a href="tel:6980877448" className="font-bold text-slate-900 hover:text-emerald-700">6980877448</a>
                 </div>
                 <div>
                   <span className="text-slate-500">Email: </span>
-                  <a href="mailto:info@miminoni.com" className="font-bold text-slate-900 hover:text-blue-700">info@miminoni.com</a>
-                  <span className="text-slate-400 mx-1 border-r border-slate-300 h-3 inline-block align-middle"></span>
-                  <a href="mailto:Kostas.Mallios@gmail.com" className="font-bold text-slate-900 hover:text-blue-700">Kostas.Mallios@gmail.com</a>
+                  <a href="mailto:info@miminoni.com" className="font-bold text-slate-900 hover:text-emerald-700">info@miminoni.com</a>
+                  <span className="text-slate-400 mx-1.5">|</span>
+                  <a href="mailto:Kostas.Mallios@gmail.com" className="font-bold text-slate-900 hover:text-emerald-700">Kostas.Mallios@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -196,15 +196,15 @@ export default function Home() {
         </div>
 
         {/* Section 2: Partners & Governance */}
-        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6 md:p-8">
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/90 p-6 md:p-8">
           <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <Users size={18} className="text-blue-700" /> Εταίροι / Διοίκηση
+            <Users size={18} className="text-emerald-700" /> Εταίροι / Διοίκηση
           </h3>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead>
-                <tr className="border-b border-slate-200 bg-slate-50 text-slate-600 font-semibold">
+                <tr className="border-b border-slate-200 bg-emerald-950/5 text-slate-700 font-semibold">
                   <th className="py-3 px-4">Όνομα / Επιχείρηση</th>
                   <th className="py-3 px-4">Κατηγορία</th>
                   <th className="py-3 px-4">Ιδιότητα</th>
@@ -218,7 +218,7 @@ export default function Home() {
                   <td className="py-3.5 px-4 font-bold text-slate-900">ΜΑΛΛΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ</td>
                   <td className="py-3.5 px-4 text-slate-700">Εταίροι</td>
                   <td className="py-3.5 px-4 text-slate-700">Μοναδικός Εταίρος και Διαχειριστής</td>
-                  <td className="py-3.5 px-4 font-bold text-blue-700">100%</td>
+                  <td className="py-3.5 px-4 font-bold text-emerald-700">100%</td>
                   <td className="py-3.5 px-4 text-slate-600">Από 23/07/2026 έως ...</td>
                   <td className="py-3.5 px-4">
                     <span className="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-emerald-300">
@@ -232,15 +232,15 @@ export default function Home() {
         </div>
 
         {/* Section 3: Activities (KAD) */}
-        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6 md:p-8">
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/90 p-6 md:p-8">
           <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <FileText size={18} className="text-blue-700" /> Σκοπός & Δραστηριότητες (ΚΑΔ)
+            <FileText size={18} className="text-emerald-700" /> Σκοπός & Δραστηριότητες (ΚΑΔ)
           </h3>
 
           <div className="space-y-4">
             <div className="bg-slate-50 p-4 rounded-lg border border-slate-200/80">
               <div className="flex items-center justify-between mb-1">
-                <span className="font-bold text-xs text-blue-700 uppercase tracking-wider">Κύριος ΚΑΔ — 68200000</span>
+                <span className="font-bold text-xs text-amber-700 uppercase tracking-wider">Κύριος ΚΑΔ — 68200000</span>
               </div>
               <div className="text-slate-900 font-bold text-base md:text-lg">
                 ΕΚΜΙΣΘΩΣΗ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗ ΙΔΙΟΚΤΗΤΩΝ Η ΜΙΣΘΩΜΕΝΩΝ ΑΚΙΝΗΤΩΝ
@@ -250,15 +250,15 @@ export default function Home() {
         </div>
 
         {/* Section 4: History / Filings */}
-        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6 md:p-8">
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/90 p-6 md:p-8">
           <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <FileText size={18} className="text-blue-700" /> Ιστορικό Καταχωρίσεων Γ.Ε.ΜΗ.
+            <FileText size={18} className="text-emerald-700" /> Ιστορικό Καταχωρίσεων Γ.Ε.ΜΗ.
           </h3>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead>
-                <tr className="border-b border-slate-200 bg-slate-50 text-slate-600 font-semibold">
+                <tr className="border-b border-slate-200 bg-emerald-950/5 text-slate-700 font-semibold">
                   <th className="py-3 px-4">Ημερομηνία</th>
                   <th className="py-3 px-4">Αριθμός ΚΑΚ</th>
                   <th className="py-3 px-4">Τύπος Αίτησης / Περιγραφή</th>
@@ -271,7 +271,7 @@ export default function Home() {
                   <td className="py-3.5 px-4 text-slate-700">195248103000</td>
                   <td className="py-3.5 px-4 font-semibold text-slate-900">Ανακοίνωση σύστασης από ΥΜΣ</td>
                   <td className="py-3.5 px-4">
-                    <span className="bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-blue-200">
+                    <span className="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">
                       ΚΑΤΑΧΩΡΙΣΗ
                     </span>
                   </td>
@@ -282,9 +282,9 @@ export default function Home() {
         </div>
 
         {/* Section 5: Financial Statements / Publications Container */}
-        <div className="bg-white rounded-xl shadow-md border border-slate-200/80 p-6 md:p-8">
+        <div className="bg-white rounded-xl shadow-md border border-slate-200/90 p-6 md:p-8">
           <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2">
-            <FileText size={18} className="text-blue-700" /> Δημοσιεύσεις & Οικονομικές Καταστάσεις
+            <FileText size={18} className="text-emerald-700" /> Δημοσιεύσεις & Οικονομικές Καταστάσεις
           </h3>
           <div className="bg-slate-50 p-4 rounded-lg border border-dashed border-slate-300 text-slate-600 text-sm flex items-start gap-3">
             <AlertCircle size={20} className="text-slate-400 shrink-0 mt-0.5" />
@@ -299,33 +299,33 @@ export default function Home() {
 
       </main>
 
-      {/* Clean Slate Corporate Footer */}
-      <footer className="bg-slate-900 text-slate-300 pt-10 pb-6 px-4 md:px-8 mt-auto border-t border-slate-800">
+      {/* Premium Dark Emerald & Slate Executive Footer */}
+      <footer className="bg-slate-950 text-slate-300 pt-10 pb-6 px-4 md:px-8 mt-auto border-t border-emerald-950">
         <div className="max-w-5xl mx-auto">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3.5">
               <img 
                 src="/logo.svg" 
                 alt="MIMI AND NONI Logo" 
                 width={48} 
                 height={48} 
-                className="w-[48px] h-[48px] object-contain shrink-0 bg-white p-1 rounded-md block" 
+                className="w-[48px] h-[48px] object-contain shrink-0 bg-white p-1 rounded-md block shadow-sm" 
               />
               <div>
                 <div className="text-lg font-bold text-white mb-0.5">
                   MIMI AND NONI ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
                 </div>
-                <div className="text-xs text-slate-400">
+                <div className="text-xs text-emerald-400 font-medium">
                   MIMI AND NONI SINGLE MEMBER P.C.
                 </div>
               </div>
             </div>
 
             <div className="text-xs text-slate-400 space-y-1">
-              <div><strong className="text-slate-300">Γ.Ε.ΜΗ.:</strong> 195248103000</div>
-              <div><strong className="text-slate-300">EUID:</strong> ELGEMI.195248103000</div>
-              <div><strong className="text-slate-300">ΑΦΜ:</strong> 803357082</div>
+              <div><strong className="text-slate-200">Γ.Ε.ΜΗ.:</strong> 195248103000</div>
+              <div><strong className="text-slate-200">EUID:</strong> ELGEMI.195248103000</div>
+              <div><strong className="text-slate-200">ΑΦΜ:</strong> 803357082</div>
             </div>
           </div>
 
@@ -334,7 +334,7 @@ export default function Home() {
               © 2026 MIMI AND NONI ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — ΑΘΑΝΑΣΙΟΥ ΔΙΑΚΟΥ 1, 16772 ΒΑΡΗ
             </div>
             <div className="text-slate-400 font-medium">
-              Δημιουργήθηκε από <a href="https://sgk.gr" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-white underline transition-colors font-bold">sgk.gr</a>
+              Δημιουργήθηκε από <a href="https://sgk.gr" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline transition-colors font-bold">sgk.gr</a>
             </div>
           </div>
 
