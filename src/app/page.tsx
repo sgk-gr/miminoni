@@ -40,10 +40,6 @@ export default function Home() {
       {/* Bright & Welcoming Coming Soon Main Section */}
       <main className="flex-grow flex flex-col items-center justify-center text-center px-6 py-16 max-w-4xl mx-auto space-y-8">
         
-        {/* Status Badge */}
-        <div className="inline-flex items-center bg-slate-100 border border-slate-200 text-slate-700 px-3.5 py-1 rounded-md text-xs font-semibold">
-          <span>Νέα ιστοσελίδα υπό κατασκευή</span>
-        </div>
 
         {/* Big Bright Title */}
         <div className="space-y-3">
