@@ -1,10 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Pure White Solid Background -->
-  <rect width="200" height="200" fill="#ffffff" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background & Emblem Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="mGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid White Canvas Container for Versatility -->
+  <rect width="500" height="500" rx="32" fill="#ffffff" />
   
-  <!-- Stylized MN Monogram / Emblem -->
-  <!-- Letter M -->
-  <path d="M 30 150 L 30 50 L 60 110 L 90 50 L 90 150 L 70 150 L 70 90 L 60 110 L 50 90 L 50 150 Z" fill="#1d4ed8" />
-  <!-- Letter N -->
-  <path d="M 110 150 L 110 50 L 145 120 L 145 50 L 165 50 L 165 150 L 130 80 L 130 150 Z" fill="#2563eb" />
+  <!-- Outer Shield Crest Structure -->
+  <path d="M 250 50 L 390 100 V 230 C 390 330 250 420 250 420 C 250 420 110 330 110 230 V 100 Z" fill="url(#bgGrad)" />
+
+  <!-- Gold Decorative Border Accent -->
+  <path d="M 250 62 L 378 108 V 226 C 378 318 250 400 250 400 C 250 400 122 318 122 226 V 108 Z" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.85" />
+
+  <!-- Interlocking Modern MN Monogram -->
+  <!-- Left Wing (M) -->
+  <path d="M 160 300 V 160 L 210 240 L 250 180 L 210 140 Z" fill="url(#mGrad)" />
+  <path d="M 160 160 L 210 240 V 300 L 160 220 Z" fill="#3b82f6" />
+
+  <!-- Right Wing (N) -->
+  <path d="M 340 160 V 300 L 290 220 L 250 280 L 290 320 Z" fill="url(#nGrad)" />
+  <path d="M 340 300 L 290 220 V 160 L 340 240 Z" fill="#60a5fa" />
+
+  <!-- Center Diamond Connection Ribbon -->
+  <polygon points="250,170 290,230 250,290 210,230" fill="url(#goldGrad)" />
+  <circle cx="250" cy="230" r="14" fill="#ffffff" />
 </svg>

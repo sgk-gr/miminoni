@@ -185,6 +185,8 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="text-slate-500">Email: </span>
+                  <a href="mailto:info@miminoni.com" className="font-bold text-slate-900 hover:text-blue-700">info@miminoni.com</a>
+                  <span className="text-slate-400 mx-1 border-r border-slate-300 h-3 inline-block align-middle"></span>
                   <a href="mailto:Kostas.Mallios@gmail.com" className="font-bold text-slate-900 hover:text-blue-700">Kostas.Mallios@gmail.com</a>
                 </div>
               </div>
