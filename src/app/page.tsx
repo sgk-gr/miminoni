@@ -297,14 +297,32 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                <tr className="hover:bg-slate-50/50">
+                <tr className="hover:bg-emerald-50/40 transition-colors">
                   <td className="py-3.5 px-4 font-medium text-slate-800">23/07/2026</td>
                   <td className="py-3.5 px-4 text-slate-700">195248103000</td>
-                  <td className="py-3.5 px-4 font-semibold text-slate-900">Ανακοίνωση σύστασης από ΥΜΣ</td>
+                  <td className="py-3.5 px-4 font-semibold text-slate-900">
+                    <a 
+                      href="/441222.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 hover:text-emerald-900 hover:underline flex items-center gap-1.5"
+                      title="Λήψη Ανακοίνωσης Σύστασης (PDF)"
+                    >
+                      <FileText size={16} className="shrink-0 text-emerald-600" />
+                      Ανακοίνωση σύστασης από ΥΜΣ
+                    </a>
+                  </td>
                   <td className="py-3.5 px-4">
-                    <span className="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-emerald-200">
-                      ΚΑΤΑΧΩΡΙΣΗ
-                    </span>
+                    <a 
+                      href="/441222.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-full border border-emerald-200 inline-flex items-center gap-1 transition-colors"
+                      title="Λήψη PDF"
+                    >
+                      <Download size={13} />
+                      ΚΑΤΑΧΩΡΙΣΗ / ΛΗΨΗ
+                    </a>
                   </td>
                 </tr>
               </tbody>
