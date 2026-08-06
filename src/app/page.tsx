@@ -5,9 +5,9 @@ import { MapPin, Phone, ShieldCheck, FileText, Calendar, Wallet, Users, AlertCir
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-emerald-950/5 text-slate-900 antialiased">
-      {/* Premium Executive Header - Deep Forest Emerald & Gold Accent */}
-      <header className="bg-slate-900 border-b border-emerald-900/40 sticky top-0 z-50 shadow-md">
+    <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-slate-900 antialiased">
+      {/* Clean Corporate Light Header */}
+      <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 md:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
           {/* Company Name & Logo */}
           <div className="flex items-center gap-3.5">
@@ -16,36 +16,36 @@ export default function Home() {
               alt="MIMI AND NONI Logo" 
               width={54} 
               height={54} 
-              className="w-[54px] h-[54px] object-contain shrink-0 rounded-lg block shadow-sm" 
+              className="w-[54px] h-[54px] object-contain shrink-0 rounded-lg block" 
             />
             <div>
-              <span className="font-extrabold text-xl md:text-2xl tracking-tight text-white block leading-tight">
+              <span className="font-extrabold text-xl md:text-2xl tracking-tight text-slate-900 block leading-tight">
                 MIMI AND NONI
               </span>
-              <span className="text-[11px] font-bold tracking-widest text-emerald-400 uppercase block mt-0.5">
+              <span className="text-[11px] font-bold tracking-widest text-emerald-700 uppercase block mt-0.5">
                 ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
               </span>
             </div>
           </div>
 
-          {/* Header Action Button - Elegant Gold / Amber */}
+          {/* Header Action Button - Clean Emerald Accent */}
           <a 
             href="tel:6980877448" 
-            className="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-4 py-2.5 rounded-md transition-all shadow-sm flex items-center gap-2 border border-amber-500/30"
+            className="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold px-4 py-2.5 rounded-md transition-all shadow-sm flex items-center gap-2"
           >
             <Phone size={14} /> 6980877448
           </a>
         </div>
       </header>
 
-      {/* Page Title Section - Rich Slate & Emerald */}
-      <section className="bg-slate-800 text-white border-b border-slate-700 py-8 px-4 md:px-8">
+      {/* Page Title Section - Light Grey & Emerald */}
+      <section className="bg-slate-100 border-b border-slate-200/80 py-8 px-4 md:px-8">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-2">
               <ShieldCheck size={16} /> Νομική Δημοσιότητα Ι.Κ.Ε. (Άρθρο 47 Ν. 4072/2012 & Ν. 4919/2022)
             </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+            <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
               Εταιρική Διαφάνεια & Στοιχεία Γ.Ε.ΜΗ.
             </h1>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
               href="https://publicity.businessportal.gr/company/195248103000#" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-slate-700 hover:bg-slate-600 text-slate-100 border border-slate-600 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
             >
               <Printer size={14} /> Εκτυπώσιμη Μορφή
             </a>
@@ -62,7 +62,7 @@ export default function Home() {
               href="https://publicity.businessportal.gr/api/company/195248103000/vcf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-slate-700 hover:bg-slate-600 text-slate-100 border border-slate-600 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs font-semibold px-3 py-2 rounded-md transition-colors shadow-sm"
             >
               <Download size={14} /> Αποθήκευση vCard
             </a>
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="md:col-span-4 text-slate-500 font-medium">
                 Αριθμός Γ.Ε.ΜΗ.
               </div>
-              <div className="md:col-span-8 font-bold text-emerald-800">
+              <div className="md:col-span-8 font-bold text-emerald-700">
                 195248103000 <span className="font-normal text-slate-500 text-sm">(EUID: ELGEMI.195248103000)</span>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function Home() {
                   href="https://www.google.com/maps/search/%CE%91%CE%98%CE%91%CE%9D%CE%91%CE%A3%CE%99%CE%9F%CE%A5%20%CE%94%CE%99%CE%91%CE%9A%CE%9F%CE%A5%201,%20%CE%91%CE%98%CE%97%CE%9D%CE%91,%2016772" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-emerald-800 hover:underline inline-flex items-center gap-1 font-semibold"
+                  className="text-emerald-700 hover:underline inline-flex items-center gap-1 font-semibold"
                 >
                   <MapPin size={15} className="text-emerald-600 shrink-0" />
                   ΑΘΑΝΑΣΙΟΥ ΔΙΑΚΟΥ 1, ΒΑΡΗ, ΒΑΡΗΣ - ΒΟΥΛΑΣ - ΒΟΥΛΙΑΓΜΕΝΗΣ / ΑΝΑΤΟΛΙΚΗΣ ΑΤΤΙΚΗΣ, 16772
@@ -204,7 +204,7 @@ export default function Home() {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead>
-                <tr className="border-b border-slate-200 bg-emerald-950/5 text-slate-700 font-semibold">
+                <tr className="border-b border-slate-200 bg-slate-50 text-slate-700 font-semibold">
                   <th className="py-3 px-4">Όνομα / Επιχείρηση</th>
                   <th className="py-3 px-4">Κατηγορία</th>
                   <th className="py-3 px-4">Ιδιότητα</th>
@@ -240,7 +240,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="bg-slate-50 p-4 rounded-lg border border-slate-200/80">
               <div className="flex items-center justify-between mb-1">
-                <span className="font-bold text-xs text-amber-700 uppercase tracking-wider">Κύριος ΚΑΔ — 68200000</span>
+                <span className="font-bold text-xs text-emerald-700 uppercase tracking-wider">Κύριος ΚΑΔ — 68200000</span>
               </div>
               <div className="text-slate-900 font-bold text-base md:text-lg">
                 ΕΚΜΙΣΘΩΣΗ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗ ΙΔΙΟΚΤΗΤΩΝ Η ΜΙΣΘΩΜΕΝΩΝ ΑΚΙΝΗΤΩΝ
@@ -258,7 +258,7 @@ export default function Home() {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead>
-                <tr className="border-b border-slate-200 bg-emerald-950/5 text-slate-700 font-semibold">
+                <tr className="border-b border-slate-200 bg-slate-50 text-slate-700 font-semibold">
                   <th className="py-3 px-4">Ημερομηνία</th>
                   <th className="py-3 px-4">Αριθμός ΚΑΚ</th>
                   <th className="py-3 px-4">Τύπος Αίτησης / Περιγραφή</th>
@@ -299,8 +299,8 @@ export default function Home() {
 
       </main>
 
-      {/* Premium Dark Emerald & Slate Executive Footer */}
-      <footer className="bg-slate-950 text-slate-300 pt-10 pb-6 px-4 md:px-8 mt-auto border-t border-emerald-950">
+      {/* Clean Light Corporate Footer */}
+      <footer className="bg-slate-900 text-slate-300 pt-10 pb-6 px-4 md:px-8 mt-auto border-t border-slate-800">
         <div className="max-w-5xl mx-auto">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-800 gap-6">
